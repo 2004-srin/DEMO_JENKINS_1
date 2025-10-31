@@ -9,13 +9,13 @@ pipeline {
     // configured in 'Manage Jenkins' -> 'Tools' -> 'NodeJs Installations'.
     tools {
         // IMPORTANT: Replace 'NodeJS_18' with your actual Jenkins Node.js configuration name
-        nodejs 'NODEJS25'
+        nodejs 'NODEJS18'
     }
 
     // Environment variables (optional)
     environment {
         // Set the path for npm to install local dependencies correctly
-        PATH = "${tool 'NODEJS25'}/bin:${env.PATH}" 
+        PATH = "${tool 'NODEJS18'}/bin:${env.PATH}" 
     }
 
     // 2. STAGES DEFINITION
@@ -103,3 +103,4 @@ pipeline {
     }
 
 }
+
